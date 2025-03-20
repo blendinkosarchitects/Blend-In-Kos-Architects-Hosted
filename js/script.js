@@ -176,14 +176,28 @@
     });
     // isotope Portfolio 
     $('.gallery').isotope({
-      itemSelector: '.items'
-    });
-    var $gallery = $('.gallery').isotope({});
-    // filter items on button click
-    $('.filtering').on( 'click', 'span', function() {
-        var filterValue = $(this).attr('data-filter');
-        $gallery.isotope({ filter: filterValue });
-    });
+        itemSelector: '.items',
+        layoutMode: 'masonry', // Use Masonry layout
+        masonry: {
+          columnWidth: '.items', // Ensure consistent column width
+          fitWidth: true // Keeps the layout centered
+        }
+      });
+      var $gallery = $('.gallery');
+
+$gallery.imagesLoaded().done(function() {
+  $gallery.isotope({
+    itemSelector: '.items',
+    layoutMode: 'masonry',
+    masonry: {
+      columnWidth: '.items',
+      fitWidth: true
+    }
+  });
+});
+
+  
+      
     $('.filtering').on( 'click', 'span', function() {
         $(this).addClass('active').siblings().removeClass('active');
     });

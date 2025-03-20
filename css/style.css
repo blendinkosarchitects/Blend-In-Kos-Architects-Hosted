@@ -1937,3 +1937,43 @@ font-size: 21px;
         width: 80%;
     }
 }
+
+/* new styles  */
+
+.h4-custom-heading{
+    font-size: 50px;
+  line-height: 1.25em;
+  font-weight: 400;
+  text-transform: uppercase;
+  position: relative;
+  margin-bottom: 20px;
+  letter-spacing: 3px;
+}
+.new-gallery-div{
+    display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /* Adjust based on your layout */
+  gap: 20px; /* Provides spacing between elements */
+}
+.new-flex{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .items {
+    width: calc(33.33% - 20px); /* Adjust based on column size */
+    margin-bottom: 20px;
+  }
+  
+  .items img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
