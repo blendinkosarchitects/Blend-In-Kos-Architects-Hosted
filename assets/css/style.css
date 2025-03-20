@@ -836,24 +836,24 @@ a {
     font-size: 16px;
 }
 .services .bg-1 {
-    background-image: url(../assets/images/blog/1.jpg);
+    background-image: url(../images/blog/1.jpg);
 }
 .services .bg-2 {
-    background-image: url(../assets/images/blog/2.jpg);
+    background-image: url(../images/blog/2.jpg);
 }
 .services .bg-3 {
-    background-image: url(../assets/images/blog/6.jpg);
+    background-image: url(../images/blog/6.jpg);
 }
 .services .bg-4 {
-    background-image: url(../assets/images/blog/3.jpg);
+    background-image: url(../images/blog/3.jpg);
 }
 
 .services .bg-5 {
-    background-image: url(../assets/images/blog/4.jpg);
+    background-image: url(../images/blog/4.jpg);
 }
 
 .services .bg-6 {
-    background-image: url(../assets/images/blog/5.jpg);
+    background-image: url(../images/blog/5.jpg);
 }
 
 /* services sidebar */
