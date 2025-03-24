@@ -168,6 +168,18 @@
         // Filter images with category === "commercial"
         const FilteredImages = images.filter(image => image.category === "COMMERCIAL INTERIORS");
 
+        // ShuffleArray Function
+        function shuffleArray(array) {
+                        for (let i = array.length - 1; i > 0; i--) {
+                            const j = Math.floor(Math.random() * (i + 1));
+                            [array[i], array[j]] = [array[j], array[i]]; // Swap elements
+                        }
+                        return array;
+                    }
+
+                    // ShuffleArray Function Trigger
+                    shuffleArray(FilteredImages);
+
 
         let columns = [[], [], []]; // Distribute images into 3 columns
 

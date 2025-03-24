@@ -1,6 +1,6 @@
-
 <!DOCTYPE html>
 <html lang="en" prefix="og: https://ogp.me/ns#">
+
 <head>
     <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-9ESKG9D1ZF"></script>
     <script>
@@ -25,13 +25,15 @@
     <link href="../../assets/css/owl.theme.default.min.css" rel="stylesheet" type="text/css">
     <link href="../../assets/css/style.css" rel="stylesheet" type="text/css">
 
-    
+
 
 </head>
+
 <body>
     <!-- Preloader -->
     <div id="Lfa-page-loading" class="Lfa-pageloading">
-        <div class="Lfa-pageloading-inner"> <img src="../../assets/images/logo-whitecopy.png" class="logo" alt=""> </div>
+        <div class="Lfa-pageloading-inner"> <img src="../../assets/images/logo-whitecopy.png" class="logo" alt="">
+        </div>
     </div>
     <!-- Wrapper -->
     <div id="next-page-wrapper">
@@ -64,10 +66,14 @@
                         </ul>
                         <!-- Menu social media -->
                         <div class="menu-social-media">
-                            <a href="https://www.facebook.com/kosarchitecture#"> <span class="next-social-icon fa fa-facebook"></span> </a>
-                            <a href="https://x.com/blendinkos#"> <span class="next-social-icon fa fa-twitter"></span> </a>
-                            <a href="https://www.instagram.com/blend_in_kos_architects#"> <span class="next-social-icon fa fa-instagram"></span> </a>
-                            <a href="https://in.pinterest.com/kosarchitecture#"> <span class="next-social-icon fa fa-pinterest"></span> </a>
+                            <a href="https://www.facebook.com/kosarchitecture#"> <span
+                                    class="next-social-icon fa fa-facebook"></span> </a>
+                            <a href="https://x.com/blendinkos#"> <span class="next-social-icon fa fa-twitter"></span>
+                            </a>
+                            <a href="https://www.instagram.com/blend_in_kos_architects#"> <span
+                                    class="next-social-icon fa fa-instagram"></span> </a>
+                            <a href="https://in.pinterest.com/kosarchitecture#"> <span
+                                    class="next-social-icon fa fa-pinterest"></span> </a>
                         </div>
                     </nav>
                 </div>
@@ -93,13 +99,14 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-6">
-                        <h4 class="h4-custom-heading animate-box" data-animate-effect="fadeInUp">COMMERCIAL<span>Projects</span></h4>
+                        <h4 class="h4-custom-heading animate-box" data-animate-effect="fadeInUp">
+                            COMMERCIAL<span>Projects</span></h4>
                     </div>
                 </div>
                 <div class="row" id="image-container"></div>
             </div>
         </section>
-           
+
         <!-- Prev-Next Projects -->
         <div class="projects-prev-next">
             <div class="container">
@@ -109,7 +116,8 @@
                             <div class="projects-prev-next-left">
                                 <a href="/gallery"> <i class="fa fa-long-arrow-left"></i> Previous</a>
                             </div> <a href="/gallery"><i class="fa fa-th"></i></a>
-                            <div class="projects-prev-next-right"> <a href="/gallery">Next <i class="fa fa-long-arrow-right"></i></a> </div>
+                            <div class="projects-prev-next-right"> <a href="/gallery">Next <i
+                                        class="fa fa-long-arrow-right"></i></a> </div>
                         </div>
                     </div>
                 </div>
@@ -122,16 +130,20 @@
                     <div class="col-md-8">
                         <ul class="next-social-icons">
                             <li class="next-social-icons-item">
-                                <a class="next-social-link" href="https://www.facebook.com/kosarchitecture#"> <span class="next-social-icon fa fa-facebook-f"></span> </a>
+                                <a class="next-social-link" href="https://www.facebook.com/kosarchitecture#"> <span
+                                        class="next-social-icon fa fa-facebook-f"></span> </a>
                             </li>
                             <li class="next-social-icons-item">
-                                <a class="next-social-link" href="https://x.com/blendinkos#"> <span class="next-social-icon fa fa-twitter"></span> </a>
+                                <a class="next-social-link" href="https://x.com/blendinkos#"> <span
+                                        class="next-social-icon fa fa-twitter"></span> </a>
                             </li>
                             <li class="next-social-icons-item">
-                                <a class="next-social-link" href="https://www.instagram.com/blend_in_kos_architects#"> <span class="next-social-icon fa fa-instagram"></span> </a>
+                                <a class="next-social-link" href="https://www.instagram.com/blend_in_kos_architects#">
+                                    <span class="next-social-icon fa fa-instagram"></span> </a>
                             </li>
                             <li class="next-social-icons-item">
-                                <a class="next-social-link" href="https://in.pinterest.com/kosarchitecture#"> <span class="next-social-icon fa fa-pinterest"></span> </a>
+                                <a class="next-social-link" href="https://in.pinterest.com/kosarchitecture#"> <span
+                                        class="next-social-icon fa fa-pinterest"></span> </a>
                             </li>
                         </ul>
                     </div>
@@ -156,67 +168,80 @@
     <script src="../../assets/js/plugins/jquery.magnific-popup.min.js"></script>
     <script src="../../assets/js/script.js"></script>
     <script>
-        document.addEventListener("DOMContentLoaded", function() {
-    fetch('/assets/json/images.json')
-    .then(response => response.json())
-    .then(images => {
-        const container = document.getElementById('image-container');
+        document.addEventListener("DOMContentLoaded", function () {
+            fetch('/assets/json/images.json')
+                .then(response => response.json())
+                .then(images => {
+                    const container = document.getElementById('image-container');
 
-        // To get all images
-        // const FilteredImages = images;
+                    // To get all images
+                    // const FilteredImages = images;
 
-        // Filter images with category === "commercial"
-        const FilteredImages = images.filter(image => image.category === "COMMERCIAL PROJECTS");
+                    // Filter images with category === "commercial"
+                    const FilteredImages = images.filter(image => image.category === "COMMERCIAL PROJECTS");
+
+                    // ShuffleArray Function
+                    function shuffleArray(array) {
+                        for (let i = array.length - 1; i > 0; i--) {
+                            const j = Math.floor(Math.random() * (i + 1));
+                            [array[i], array[j]] = [array[j], array[i]]; // Swap elements
+                        }
+                        return array;
+                    }
+
+                    // ShuffleArray Function Trigger
+                    shuffleArray(FilteredImages);
 
 
-        let columns = [[], [], []]; // Distribute images into 3 columns
+                    let columns = [[], [], []]; // Distribute images into 3 columns
 
-        FilteredImages.forEach((image, index) => {
-            columns[index % 3].push(image);
+                    FilteredImages.forEach((image, index) => {
+                        columns[index % 3].push(image);
+                    });
+
+                    let imageCount = 0; // Track image count for eager/lazy loading
+
+                    columns.forEach(columnImages => {
+                        const column = document.createElement('div');
+                        column.className = 'col-lg-4 col-md-6 mb-4'; // Bootstrap grid classes
+
+                        columnImages.forEach(imgData => {
+                            const link = document.createElement('a');
+                            link.href = imgData.path; // Link to full-size image
+                            link.className = 'popup-image';
+                            link.setAttribute('data-magnify', 'gallery');
+                            link.title = imgData.alt || "Gallery Image";
+
+                            const img = document.createElement('img');
+                            img.src = imgData.path;
+                            img.className = 'w-100 shadow-1-strong rounded mb-4';
+                            img.alt = imgData.alt || "Gallery Image"; // Assign alt text dynamically
+
+                            // First 3 images: eager loading, others: lazy
+                            img.loading = imageCount < 3 ? "eager" : "lazy";
+                            imageCount++;
+
+                            link.appendChild(img);
+                            column.appendChild(link);
+                        });
+
+                        container.appendChild(column);
+                    });
+
+                    // Initialize Magnific Popup
+                    $(document).ready(function () {
+                        $('.popup-image').magnificPopup({
+                            type: 'image',
+                            gallery: { enabled: true },
+                            zoom: { enabled: true, duration: 300 }
+                        });
+                    });
+                })
+                .catch(error => console.error('Error loading images:', error));
         });
-
-        let imageCount = 0; // Track image count for eager/lazy loading
-
-        columns.forEach(columnImages => {
-            const column = document.createElement('div');
-            column.className = 'col-lg-4 col-md-6 mb-4'; // Bootstrap grid classes
-
-            columnImages.forEach(imgData => {
-                const link = document.createElement('a');
-                link.href = imgData.path; // Link to full-size image
-                link.className = 'popup-image';
-                link.setAttribute('data-magnify', 'gallery');
-                link.title = imgData.alt || "Gallery Image";
-
-                const img = document.createElement('img');
-                img.src = imgData.path;
-                img.className = 'w-100 shadow-1-strong rounded mb-4';
-                img.alt = imgData.alt || "Gallery Image"; // Assign alt text dynamically
-                
-                // First 3 images: eager loading, others: lazy
-                img.loading = imageCount < 3 ? "eager" : "lazy"; 
-                imageCount++;
-
-                link.appendChild(img);
-                column.appendChild(link);
-            });
-
-            container.appendChild(column);
-        });
-
-        // Initialize Magnific Popup
-        $(document).ready(function() {
-            $('.popup-image').magnificPopup({
-                type: 'image',
-                gallery: { enabled: true },
-                zoom: { enabled: true, duration: 300 }
-            });
-        });
-    })
-    .catch(error => console.error('Error loading images:', error));
-});
 
     </script>
-    
+
 </body>
+
 </html>
