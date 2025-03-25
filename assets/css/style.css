@@ -801,6 +801,26 @@ a {
     font-size: 27px;
     position: relative;  
 }
+@media (max-width: 700px) { 
+    .item-mobile {
+        color: #fff;
+    }
+
+    .item-mobile:after {
+        opacity: 0;
+    }
+
+    .item-mobile h5,
+    .item-mobile p,
+    .item-mobile span,
+    .item-mobile .numb {
+        color: #fff;
+    }
+
+    .item-mobile .numb {
+        -webkit-text-stroke: 1px #fff;
+    }
+}
 
 .services h5 span {
     color: #c5a47e;

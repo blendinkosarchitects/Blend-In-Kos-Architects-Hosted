@@ -283,5 +283,23 @@
     <script src="../assets/js/plugins/imagesloaded.js"></script>
     <script src="../assets/js/plugins/jquery.magnific-popup.min.js"></script>
     <script src="../assets/js/script.js"></script>
+    <script>
+        const items = document.querySelectorAll('.item');
+
+        if (window.innerWidth <= 1024) { // Target only mobile and tablet screens
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('item-mobile'); // Apply effect when in viewport
+                    } else {
+                        entry.target.classList.remove('item-mobile'); // Remove effect when out of viewport
+                    }
+                });
+            }, { threshold: 0.5 });
+
+            items.forEach(item => observer.observe(item));
+        }
+    </script>
+    
 </body>
 </html>
