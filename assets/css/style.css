@@ -1976,4 +1976,30 @@ font-size: 21px;
     height: auto;
     display: block;
   }
-  
+  #careers {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+.job-listing {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+.apply-btn {
+    display: inline-block;
+    padding: 8px 12px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+}
+.apply-btn:hover {
+    background-color: #0056b3;
+}
+.career-sub-head{
+    font-size: large;
+    color: #1c1c1c;
+}
