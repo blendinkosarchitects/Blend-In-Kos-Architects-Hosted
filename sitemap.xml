@@ -31,6 +31,11 @@
   <priority>0.80</priority>
 </url>
 <url>
+  <loc>https://blendinkosarchitects.com/blog/</loc>
+  <lastmod>2025-05-09T12:12:57+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
   <loc>https://blendinkosarchitects.com/contact/</loc>
   <lastmod>2025-03-24T14:24:15+00:00</lastmod>
   <priority>0.80</priority>
@@ -73,6 +78,16 @@
 <url>
   <loc>https://blendinkosarchitects.com/gallery/landscape-designs/</loc>
   <lastmod>2025-03-24T14:24:15+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://blendinkosarchitects.com/blog/future-of-sustainable-architecture/</loc>
+  <lastmod>2025-05-09T12:12:57+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://blendinkosarchitects.com/blog/igbc-vs-kerala-sustainable-legacy/</loc>
+  <lastmod>2025-05-09T12:12:57+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 
