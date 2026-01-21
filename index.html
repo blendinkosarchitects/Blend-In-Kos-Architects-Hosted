@@ -651,6 +651,18 @@
     <script src="assets/js/plugins/imagesloaded.js"></script>
     <script src="assets/js/plugins/jquery.magnific-popup.min.js"></script>
     <script src="assets/js/script.js"></script>
+    <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const slides = document.querySelectorAll(".swiper-slide");
+    slides.forEach((slide, index) => {
+      const numberEl = slide.querySelector(".next-number");
+      if (numberEl) {
+        numberEl.innerHTML = index + 1;
+      }
+    });
+  });
+</script>
+
 </body>
 
 </html>

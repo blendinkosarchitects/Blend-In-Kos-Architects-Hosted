@@ -1943,7 +1943,7 @@ font-size: 21px;
         margin-top: 150px;
     }
     .swiper-slide-block .next-number {
-        margin-top: 50px;
+        margin-top: -50px;
         font-size: 250px;
     }
 }
