@@ -2034,3 +2034,16 @@ font-size: 21px;
     white-space: nowrap;
     border: 0;
 }
+
+.projects{
+    .item{
+        height: 400px;
+    }
+    .item>div:first-child{
+        height: inherit;
+    }
+    .item>div>img{
+        height: inherit;
+        object-fit: cover;
+    }
+}
